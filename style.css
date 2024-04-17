@@ -176,6 +176,71 @@ header .navbar .right-content i {
     width: 100%;
 }
 
+/* Bottom Banner - Banner de Fondo - CTA */
+
+#bannerBottom {
+    margin: 1rem 0 2rem;
+}
+
+#bannerBottom .banner__container {
+    display: grid;
+    grid-template-columns: 60% auto;
+    align-items: center;
+    text-decoration: none;
+    background: var(--freddo-primary-500);
+    color: var(--freddo-gray-100);
+    overflow: hidden;
+}
+
+#bannerBottom .banner__container * {
+    transition: ease-in-out all 300ms;
+}
+
+#bannerBottom .banner__container:hover * {
+    filter: drop-shadow(0 0 5px rgba(0, 0, 0, 0.15));
+}
+
+#bannerBottom .banner__container h2 {
+    font-size: 10rem;
+    font-weight: 800;
+    margin: 0;
+    padding: 0;
+}
+
+#bannerBottom .banner__container h4 {
+    font-size: 4rem;
+    font-weight: 800;
+    margin: 0;
+    padding: 0;
+}
+
+#bannerBottom .banner__container h6 {
+    font-size: 2rem;
+    font-weight: 800;
+    margin: 0;
+    padding: 0;
+}
+
+#bannerBottom .banner__container .col {
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+}
+
+#bannerBottom .banner__container .col:nth-child(1) {
+    justify-content: center;
+    padding: 1rem;
+}
+
+#bannerBottom .banner__container .col:nth-child(2) {
+    justify-content: end;
+}
+
+#bannerBottom .banner__container img {
+    height: 600px;
+    object-fit: cover;
+}
+
 /* Footer Settings - Pie del Sitio  */
 footer {
     background: var(--freddo-gray-400);
@@ -264,6 +329,23 @@ footer .copyright__row {
         grid-template-columns: 1fr;
     }
 
+    /* Bottom Banner */
+    #bannerBottom .banner__container h2 {
+        font-size: 6rem;
+    }
+
+    #bannerBottom .banner__container h4 {
+        font-size: 2rem;
+    }
+
+    #bannerBottom .banner__container h6 {
+        font-size: 1.5rem;
+    }
+
+    #bannerBottom .banner__container img {
+        height: 300px;
+    }
+
     /* Footer Settings - Pie del Sitio  */
     footer .footer__menu {
         display: grid;
@@ -296,6 +378,20 @@ footer .copyright__row {
 
     .contact__container .col form .form-row {
         grid-template-columns: 1fr;
+    }
+
+    /* Bottom Banner */
+
+    #bannerBottom .banner__container h2 {
+        font-size: 3rem;
+    }
+
+    #bannerBottom .banner__container h4 {
+        font-size: 1.1rem;
+    }
+
+    #bannerBottom .banner__container h6 {
+        font-size: .75rem;
     }
 
     /* Footer Settings - Pie del Sitio  */
